@@ -1,7 +1,7 @@
 <div class="bg-gray-800 text-white py-4">
     <div class="max-w-[1200px] mx-auto px-4 flex items-center justify-between flex-row">
         <nav class="flex items-center justify-center flex-row gap-24">
-            <a href="index.php?page=index" class="text-x2 font-bold">I Puc</a>
+            <a href="index.php?page=loginPainel" class="text-x2 font-bold">I Puc</a>
             <a href="index.php?page=index" class="text-x2 font-bold">Início</a>
             <a href="index.php?page=products" class="text-x2 font-bold">Produtos</a>
             <a href="index.php?page=aboutUs" class="text-x2 font-bold">Sobre nós</a>
