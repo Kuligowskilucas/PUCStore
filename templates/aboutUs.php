@@ -71,8 +71,10 @@
         </div>
     </div>
 </section>
-<section class="bg-sky-950">
-    <div class="max-w-[1200px] mx-auto px-4 flex items-center justify-between flex-col">
-
+<section class="bg-gray-800">
+    <div class="max-w-[1200px] mx-auto px-4 flex items-center justify-between flex-col py-8">
+        <p class="text-white font-bold text-3xl mb-4">Explore nossa seleção de produtos Apple</p>
+        <p class="text-white text-lg mb-8">Descubra o que há de mais novo e avançado na I Puc e transforme sua experiência tecnológica.</p>
+        <a class="bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-300" href="index.php?page=products">Ver produtos</a>
     </div>
 </section>
