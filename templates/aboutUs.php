@@ -45,6 +45,9 @@
     <div class="max-w-[1200px] mx-auto px-4 flex items-center justify-between flex-col pb-8">
         <div class="flex flex-col items-center w-full mt-24">
             <p class="font-bold text-2xl mb-8">Nossa Equipe</p>
+            <p class="text-base mx-4 mb-4 text-center">Na "I Puc", nossa equipe é o coração da empresa. 
+                Formada por especialistas apaixonados por tecnologia, nossa equipe está sempre pronta para oferecer um atendimento dedicado e personalizado. 
+                Com conhecimento profundo sobre cada produto Apple, nossos profissionais estão prontos para sanar dúvidas e guiar cada cliente em sua jornada tecnológica.</p>
             <div class="flex flex-row justify-between w-full">
                 <div class="flex flex-col justify-between items-center bg-white rounded-2xl w-80 h-56 py-4">
                     <picture class="max-h-24 overflow-hidden flex items-center justify-center rounded-full">
@@ -68,6 +71,9 @@
                     <p class="text-base mx-4 mb-4 text-justify">Especialista Apple</p>
                 </div>
             </div>
+            <br>
+            <p class="text-base mx-4 mb-4 text-center">Acreditamos que um excelente atendimento vai além da venda. Nossa equipe está comprometida em construir relacionamentos, 
+            entender as necessidades individuais dos nossos clientes e garantir que cada experiência na I Puc seja excepcional.</p>
         </div>
     </div>
 </section>
