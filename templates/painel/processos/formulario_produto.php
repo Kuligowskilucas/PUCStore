@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 exit;
             }
         } else {
-            echo "Somente imagens .jpg, .jpeg e .png são permitidas.";
+            echo "Somente imagens .jpg, .jpeg, .png e .webp são permitidas.";
             exit;
         }
     } else {
@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $stmt = $conn->prepare($query);
     if ($stmt) {
-        $stmt->bind_param("sdss", $name, $price, $quantity, $imagePath); // "d" para double (preço) e "s" para string (nome, quantidade e imagem)
+        $stmt->bind_param("sdss", $name, $price, $quantity, $imagePath);
 
         if ($stmt->execute()) {
             echo "Produto cadastrado com sucesso!";
