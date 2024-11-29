@@ -2,7 +2,7 @@
 $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 $pagePath = "templates/$page.php";
 
-include "DB.php";
+include_once "DB.php";
 
 if (!file_exists($pagePath)) {
     $page = '404';
