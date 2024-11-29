@@ -1,12 +1,15 @@
 <?php
 $page = isset($_GET['page']) ? $_GET['page'] : 'home';
-
 $pagePath = "templates/$page.php";
+
+include "DB.php";
 
 if (!file_exists($pagePath)) {
     $page = '404';
     $pagePath = "templates/404.php";
 }
+
+$db = new DB();
 ?>
 <!DOCTYPE html>
 <html>
@@ -22,7 +25,7 @@ if (!file_exists($pagePath)) {
         </header>
 
         <main id="main-content">
-            <?php include $pagePath; ?>
+            <?php include $pagePath;?>
         </main>
 
         <footer>
