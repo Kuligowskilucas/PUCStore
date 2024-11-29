@@ -1,6 +1,6 @@
 <div class="container mx-auto py-24">
   <h1 class="text-3xl font-bold text-center mb-8">Cadastro de Produto</h1>
-  <form>
+  <form enctype="multipart/form-data">
     <div class="mb-4">
       <label for="image" class="block text-gray-700 text-sm font-bold mb-2">Imagem</label>
       <input type="file" id="image" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">   
