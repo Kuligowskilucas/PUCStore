@@ -10,14 +10,6 @@ if (!file_exists($pagePath)) {
 }
 $baseURL = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/') . '/';
 $db = new DB();
-
-function verificaLogin() {
-    session_start();
-    if (!isset($_SESSION['user_id']) || !isset($_SESSION['user_email'])) {
-        header("Location: http://localhost/PUCStore/index.php?page=painel/loginPainel");
-        exit;
-    }
-}
 ?>
 <!DOCTYPE html>
 <html>

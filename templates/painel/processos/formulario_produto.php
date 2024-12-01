@@ -1,7 +1,7 @@
-<?php 
-
+<?php
 include "../../../DB.php";
 include "../../../config.php";
+
 $db = new DB();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -9,35 +9,36 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $price = $_POST['price'];
     $quantity = $_POST['quantity'];
 
-    if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
-        $imageTmp = $_FILES['image']['tmp_name'];
-        $imageName = $_FILES['image']['name'];
+    if (isset($_FILES['image']) && $_FILES['image']['error'] === 0) {
+        $imageTmp = $_FILES['image']['tmp_name']; 
+        $imageName = basename($_FILES['image']['name']);
         $imageSize = $_FILES['image']['size'];
-        $imageType = $_FILES['image']['type'];
+        $imageType = $_FILES['image']['type']; 
 
-        $uploadDir = UPDATES_DIR;
-        $imagePath = $uploadDir . basename($imageName);
+        $imagePath = UPDATES_DIR . $imageName;
 
+        $imageURL = UPDATES_URL . $imageName;
 
         $allowedTypes = ['image/jpeg', 'image/png', 'image/jpg', 'image/webp'];
+
         if (in_array($imageType, $allowedTypes)) {
             if ($imageSize <= 5 * 1024 * 1024) {
                 if (move_uploaded_file($imageTmp, $imagePath)) {
-                    echo "Imagem carregada com sucesso!";
+                    echo "Imagem carregada com sucesso!<br>";
                 } else {
-                    echo "Erro ao mover a imagem para o diretório de uploads.";
+                    echo "Erro ao mover a imagem para o diretório de uploads.<br>";
                     exit;
                 }
             } else {
-                echo "A imagem é muito grande. O tamanho máximo permitido é 5MB.";
+                echo "A imagem é muito grande. O tamanho máximo permitido é 5MB.<br>";
                 exit;
             }
         } else {
-            echo "Somente imagens .jpg, .jpeg, .png e .webp são permitidas.";
+            echo "Somente imagens .jpg, .jpeg, .png e .webp são permitidas.<br>";
             exit;
         }
     } else {
-        echo "Por favor, selecione uma imagem para o produto.";
+        echo "Por favor, selecione uma imagem para o produto.<br>";
         exit;
     }
 
@@ -46,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $stmt = $conn->prepare($query);
     if ($stmt) {
-        $stmt->bind_param("sdss", $name, $price, $quantity, $imagePath);
+        $stmt->bind_param("sdss", $name, $price, $quantity, $imageURL);
 
         if ($stmt->execute()) {
             echo "Produto cadastrado com sucesso!";
@@ -57,6 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         echo "Erro na preparação da consulta: " . $conn->error;
     }
+
     $conn->close();
 }
 ?>

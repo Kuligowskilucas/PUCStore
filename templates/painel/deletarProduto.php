@@ -1,5 +1,6 @@
 <?php
 include_once "../../DB.php";
+include_once "../../config.php";
 verificaLogin();
 $db = new DB();
 $conn = $db->connect();
