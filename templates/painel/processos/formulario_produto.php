@@ -2,7 +2,10 @@
 include "../../../DB.php";
 include "../../../config.php";
 
-$db = new DB();
+use App\DB; 
+
+$db = new DB(); 
+$conn = $db->connect();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['nome'];

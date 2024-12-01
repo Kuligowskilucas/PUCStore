@@ -51,17 +51,17 @@
       <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-12">Por Que Escolher Nossa Loja?</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
         <div>
-          <div class="bg-black text-white w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4 text-3xl">🎯</div>
+          <div class="bg-gray text-white w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4 text-3xl">🎯</div>
           <h3 class="text-xl font-bold text-gray-900 mb-2">Qualidade Garantida</h3>
           <p class="text-gray-700">Produtos 100% originais certificados pela Apple.</p>
         </div>
         <div>
-          <div class="bg-black text-white w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4 text-3xl">🚚</div>
+          <div class="bg-gray text-white w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4 text-3xl">🚚</div>
           <h3 class="text-xl font-bold text-gray-900 mb-2">Entrega Rápida</h3>
           <p class="text-gray-700">Receba seus produtos em até 3 dias úteis.</p>
         </div>
         <div>
-          <div class="bg-black text-white w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4 text-3xl">💳</div>
+          <div class="bg-gray text-white w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4 text-3xl">💳</div>
           <h3 class="text-xl font-bold text-gray-900 mb-2">Pagamento Seguro</h3>
           <p class="text-gray-700">Pagamentos com os mais altos padrões de segurança.</p>
         </div>

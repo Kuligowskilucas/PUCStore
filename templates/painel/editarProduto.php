@@ -1,8 +1,11 @@
 <?php
 include_once "../../DB.php";
 include_once "../../config.php";
-verificaLogin();
-$db = new DB();
+verificaLoginAdmin();
+use App\DB; 
+
+$db = new DB(); 
+$conn = $db->connect();
 $conn = $db->connect();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

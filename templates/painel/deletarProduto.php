@@ -1,8 +1,10 @@
 <?php
 include_once "../../DB.php";
 include_once "../../config.php";
-verificaLogin();
-$db = new DB();
+verificaLoginAdmin();
+use App\DB; 
+
+$db = new DB(); 
 $conn = $db->connect();
 
 if (isset($_GET['id'])) {

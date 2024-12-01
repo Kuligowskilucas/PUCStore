@@ -3,13 +3,16 @@ define('BASE_PATH', __DIR__ . '/../../');
 include_once BASE_PATH . 'DB.php';
 include BASE_PATH . "config.php";
 
-$db = new DB();
+use App\DB; 
+
+$db = new DB(); 
+$conn = $db->connect();
 $conn = $db->connect();
 
 $query = "SELECT id, nome, preco, quantidade, imagem FROM produtos";
 $result = $conn->query($query);
 
-verificaLogin();
+verificaLoginAdmin();
 ?>
 <div class="container mx-auto py-24">
     <h1 class="text-3xl font-bold text-center mb-8">Lista de Produtos</h1>

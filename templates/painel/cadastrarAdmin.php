@@ -1,6 +1,9 @@
 <?php 
 
-$db->connect();
+use App\DB; 
+
+$db = new DB(); 
+$conn = $db->connect();
 ?>
 <div class="container mx-auto py-52">
     <h1 class="text-3xl font-bold text-center mb-8">Cadastrar Administrador</h1>

@@ -1,5 +1,7 @@
 <?php
 
+namespace App;
+
 class DB
 {
     private string $server = "localhost";
@@ -10,7 +12,7 @@ class DB
 
     public function connect()
     {
-        $this->conn = new mysqli($this->server, $this->user, $this->password, $this->db);
+        $this->conn = new \mysqli($this->server, $this->user, $this->password, $this->db);
 
         if ($this->conn->connect_error) {
             die("Falha de conexão: " . $this->conn->connect_error);

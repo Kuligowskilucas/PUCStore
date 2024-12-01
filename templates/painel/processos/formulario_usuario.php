@@ -1,6 +1,9 @@
 <?php 
 include "../../../DB.php";
-$db = new DB();
+use App\DB; 
+
+$db = new DB(); 
+$conn = $db->connect();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
