@@ -1,6 +1,7 @@
 <?php 
 
 include "../../../DB.php";
+include "../../../config.php";
 $db = new DB();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -14,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $imageSize = $_FILES['image']['size'];
         $imageType = $_FILES['image']['type'];
 
-        $uploadDir = $_SERVER['DOCUMENT_ROOT'] . "/PUCStore/assets/images/";
+        $uploadDir = UPDATES_DIR;
         $imagePath = $uploadDir . basename($imageName);
 
 

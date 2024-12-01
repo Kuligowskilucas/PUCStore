@@ -1,17 +1,19 @@
 <?php
 define('BASE_PATH', __DIR__ . '/../../');
 include_once BASE_PATH . 'DB.php';
-
+include BASE_PATH . "config.php";
 
 $db = new DB();
 $conn = $db->connect();
 
 $query = "SELECT id, nome, preco, quantidade, imagem FROM produtos";
 $result = $conn->query($query);
+
+verificaLogin();
 ?>
 <div class="container mx-auto py-24">
     <h1 class="text-3xl font-bold text-center mb-8">Lista de Produtos</h1>
-    <table class="table-auto w-full bg-white shadow-md rounded">
+    <table class="table-auto w-full bg-white shadow-md rounded mb-8">
         <thead>
         <tr>
             <th class="px-4 py-2 border">ID</th>
@@ -50,5 +52,7 @@ $result = $conn->query($query);
         <?php endif; ?>
         </tbody>
     </table>
+    <a class="bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-300 mb-8" href="index.php?page=painel/cadastrarProduto">Cadastrar Produto</a>
+
 </div>
 <?php $conn->close(); ?>

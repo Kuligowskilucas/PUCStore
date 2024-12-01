@@ -11,35 +11,34 @@
     </div>
   </section>
 
-  <!-- Products Section -->
   <section id="produtos" class="py-16 bg-white">
     <div class="container mx-auto px-6">
       <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-12">Nossos Produtos</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Product Card -->
-        <div class="bg-gray-50 shadow-lg rounded-lg transform transition hover:scale-105">
-          <img src="URL_DO_IPHONE" alt="iPhone 15 Pro" class="w-full h-64 object-cover rounded-t-lg">
+    
+        <div class="flex flex-col items-center bg-gray-50 shadow-lg rounded-lg transform transition hover:scale-105">
+          <img src="assets/images/iphone-15-pro.webp" alt="iPhone 15 Pro" class="mt-2 w-full h-64 object-contain rounded-t-lg">
           <div class="p-6">
             <h3 class="text-2xl font-bold text-gray-900 mb-2">iPhone 15 Pro</h3>
             <p class="text-gray-700 mb-4">Desempenho revolucionário com design futurista.</p>
-            <a href="#" class="inline-block bg-black text-white px-6 py-2 rounded-full shadow-md hover:bg-gray-800 transition">Ver Mais</a>
+            <a href="index.php?page=products" class="inline-block bg-black text-white px-6 py-2 rounded-full shadow-md hover:bg-gray-800 transition">Ver Mais</a>
           </div>
         </div>
-        <!-- Repeat for Other Products -->
-        <div class="bg-gray-50 shadow-lg rounded-lg transform transition hover:scale-105">
-          <img src="URL_DO_MACBOOK" alt="MacBook Pro" class="w-full h-64 object-cover rounded-t-lg">
+        
+        <div class="flex flex-col items-center bg-gray-50 shadow-lg rounded-lg transform transition hover:scale-105">
+          <img src="assets/images/macbook.png" alt="MacBook Pro" class="mt-2 w-full h-64 object-contain rounded-t-lg">
           <div class="p-6">
             <h3 class="text-2xl font-bold text-gray-900 mb-2">MacBook Pro</h3>
             <p class="text-gray-700 mb-4">Poder e elegância para profissionais exigentes.</p>
-            <a href="#" class="inline-block bg-black text-white px-6 py-2 rounded-full shadow-md hover:bg-gray-800 transition">Ver Mais</a>
+            <a href="index.php?page=products" class="inline-block bg-black text-white px-6 py-2 rounded-full shadow-md hover:bg-gray-800 transition">Ver Mais</a>
           </div>
         </div>
-        <div class="bg-gray-50 shadow-lg rounded-lg transform transition hover:scale-105">
-          <img src="URL_DOS_AIRPODS" alt="AirPods Pro" class="w-full h-64 object-cover rounded-t-lg">
+        <div class="flex flex-col items-center bg-gray-50 shadow-lg rounded-lg transform transition hover:scale-105">
+          <img  src="assets/images/airpods-max.png" alt="AirPods Pro" class="mt-2 w-full h-64 object-contain rounded-t-lg">
           <div class="p-6">
             <h3 class="text-2xl font-bold text-gray-900 mb-2">AirPods Pro</h3>
             <p class="text-gray-700 mb-4">Áudio imersivo com cancelamento ativo de ruído.</p>
-            <a href="#" class="inline-block bg-black text-white px-6 py-2 rounded-full shadow-md hover:bg-gray-800 transition">Ver Mais</a>
+            <a href="index.php?page=products" class="inline-block bg-black text-white px-6 py-2 rounded-full shadow-md hover:bg-gray-800 transition">Ver Mais</a>
           </div>
         </div>
       </div>

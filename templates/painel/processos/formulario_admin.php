@@ -15,8 +15,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $passwordHash = password_hash($password, PASSWORD_DEFAULT);
 
-    $query = "INSERT INTO admin (email, senha) VALUES (?, ?)";
+    $query = "INSERT INTO administrador (email, senha) VALUES (?, ?)";
     $params = [$email, $passwordHash];
     $db->preparedQuery($query, "ss", $params);
+
+    header('Location: http://localhost/PUCStore/index.php?page=painel/loginPainel');
 }
+
+
 ?>

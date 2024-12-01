@@ -14,7 +14,7 @@
                 placeholder="Sua senha">
         </div>
         <div class="mb-6">
-            <label for="password_confirm" class="block text-gray-700 text-sm font-bold mb-2">Senha</label>
+            <label for="password_confirm" class="block text-gray-700 text-sm font-bold mb-2">Confirmar Senha</label>
             <input type="password" name="password_confirm" id="password_confirm"  
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  
                 placeholder="Sua senha">

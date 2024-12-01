@@ -1,6 +1,6 @@
 <?php
 include_once "../../DB.php";
-
+verificaLogin();
 $db = new DB();
 $conn = $db->connect();
 
