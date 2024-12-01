@@ -1,15 +1,13 @@
 <main class="bg-gray-50 text-gray-900 font-sans">
   <!-- Hero Section -->
-  <section class="relative h-screen flex items-center justify-center bg-gradient-to-r from-gray-100 to-gray-300">
-    <div class="text-center px-6 max-w-4xl">
-      <h1 class="text-6xl font-extrabold text-gray-900 mb-6">Explore o Melhor da Apple</h1>
-      <p class="text-gray-700 text-2xl mb-8">iPhones, MacBooks e acessórios exclusivos em um só lugar.</p>
-      <a href="#produtos" class="inline-block bg-black text-white px-8 py-4 text-lg font-semibold rounded-full shadow-md hover:bg-gray-800 transition">Comprar Agora</a>
+  <section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('assets/images/initial-apple.png');">
+    <!-- Texto e Botão -->
+    <div class="text-center px-6 max-w-4xl relative z-10">
+        <h1 class="text-6xl font-extrabold text-white mb-6">Explore o Melhor da Apple</h1>
+        <p class="text-white text-2xl mb-8">iPhones, MacBooks e acessórios exclusivos em um só lugar.</p>
+        <a href="#produtos" class="inline-block bg-gray-800 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-md hover:bg-gray-700 hover:shadow-lg hover:scale-105 transition-all duration-300">Comprar Agora</a>
     </div>
-    <div class="absolute inset-0 -z-10">
-      <img src="assets/images/initial-apple.png" alt="Apple Store" class="w-full h-full object-cover opacity-80">
-    </div>
-  </section>
+</section>
 
   <section id="produtos" class="py-16 bg-white">
     <div class="container mx-auto px-6">
