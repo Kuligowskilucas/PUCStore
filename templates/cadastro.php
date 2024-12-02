@@ -1,5 +1,5 @@
 <div class="container mx-auto py-52">
-    <h1 class="text-3xl font-bold text-center mb-8">Faça sua conta na Apple</h1>
+    <h1 class="text-3xl font-bold text-center mb-8">Faça sua conta na PUC Store</h1>
     <form action="templates/painel/processos/formulario_usuario.php" method="POST">
         <div class="mb-4">
             <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>

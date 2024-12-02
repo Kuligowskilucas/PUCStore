@@ -1,7 +1,7 @@
 <?php
 define('BASE_PATH', __DIR__ . '/../../');
 include_once BASE_PATH . 'DB.php';
-include BASE_PATH . "config.php";
+include_once BASE_PATH . "config.php";
 
 use App\DB; 
 

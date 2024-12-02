@@ -33,7 +33,6 @@ $db = new DB();
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/Swiper.js"></script>
-    <script src="./components/modal/modal.js"></script>
     <link rel="stylesheet" href="<?php echo $baseURL; ?>assets/css/output.css">
 
 </head>

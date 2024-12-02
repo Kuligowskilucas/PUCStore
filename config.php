@@ -6,17 +6,19 @@ define('BASE_URL', 'http://localhost/PUCStore');
 define('UPDATES_URL', BASE_URL . '/updates/');
 
 function verificaLoginAdmin() {
-    session_start();
+    if (session_status() === PHP_SESSION_NONE) {
+        session_start();
+    }
     if (!isset($_SESSION['user_id']) || !isset($_SESSION['user_email'])) {
         header("Location: http://localhost/PUCStore/index.php?page=painel/loginPainel");
         exit;
     } 
 }
 
-// a função deve retornar o email do usuario logado ou false caso não esteja logado
-
 function verificaLoginUsuario() {
-    session_start();
+    if (session_status() === PHP_SESSION_NONE) {
+        session_start();
+    }
     if (!isset($_SESSION['user_id']) || !isset($_SESSION['user_email'])) {
         return false;
     } else {
